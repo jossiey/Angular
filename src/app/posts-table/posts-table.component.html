@@ -1,0 +1,40 @@
+<br />
+<div class="container">
+ <div class="row">
+ <div class="col-md-12">
+ <a class="btn btn-success btn-sm pull-right" routerLink = "/admin/newPost" >+&nbsp;&nbsp;New Post</a><br /><br />
+ <table class="table table-hover">
+ <thead>
+ <tr>
+ <th>Title</th>
+ <th>Post Date</th>
+ <th>Category</th>
+ </tr>
+ </thead>
+ <tbody  >
+ <tr *ngFor =" let post of blogPosts" (click)="rowClicked($event, post._id)" >
+ <td>{{post.title}}</td>
+ <td> {{post.postDate | date:'mediumDate'}} </td>
+ <td>{{post.category}}</td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+ </div>
+</div>
+<br />
+
+<!-- <form #itemForm="ngForm" (ngSubmit)="onSubmit(itemForm)">
+    <label for="name"
+      >Name <input class="form-control" name="name" ngModel required />
+    </label>
+    <button type="submit">Submit</button>
+  </form>
+  
+  <div [hidden]="!itemForm.form.valid">
+    <p>{{ submitMessage }}</p>
+  </div>
+
+  (click) = "rowClicked($event，post._id)" 
+  [post]="post"  [routerLink]="['/admin/post', post._id]" 
+-->

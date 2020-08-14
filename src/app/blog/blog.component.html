@@ -1,0 +1,39 @@
+<!-- /*********************************************************************************
+* WEB422 – Assignment 05
+* I declare that this assignment is my own work in accordance with Seneca Academic Policy. No part of this
+* assignment has been copied manually or electronically from any other source (including web sites) or
+* distributed to other students.
+*
+* Name: __Jie Yang_______________ Student ID: __162925184_______ Date: ___July. 26, 2020________
+*
+********************************************************************************/  -->
+<div class="container">
+  <div class="row">
+     <!-- Latest posts -->
+<main class="posts-listing col-lg-8"> 
+  <div class="container">
+    <div  class="row">      
+      <app-post-card class="post col-xl-6"  *ngFor="let post of blogPosts"  [post]="post"></app-post-card>
+    </div>
+    <div class="w-100"><app-paging  [page] = "page"  (newPage) = "getPage($event)"></app-paging></div>
+  </div>
+</main>
+
+<aside class="col-lg-4">
+  <!-- Widget [Search Bar Widget]-->
+  <app-search-widget></app-search-widget>
+
+  <!-- Widget [Latest Posts Widget] -->
+  <!-- <app-latest-posts [posts]="blogPosts.slice(0,3)"></app-latest-posts> -->
+  <app-latest-posts></app-latest-posts>
+
+  <!-- Widget [Categories Widget]-->
+  <app-categories></app-categories>
+
+  <!-- Widget [Tags Cloud Widget]-->
+  <app-tags></app-tags>
+
+</aside>
+
+</div>
+</div>
