@@ -6,7 +6,7 @@
 * Create new posts, edit/delete existing posts
 * Allow users to comment on posts
 * Track the number of "views" per post
-* Display blogs by Category/Tag
+* Filter posts by Category/Tag
 * Maintain and manage the data of blog posts on MongoDB atlas
 
 ## Using the Library
