@@ -1,5 +1,5 @@
 # Blog website - Angular
-#### This reposity hosts a demo blog website which is deployed on heroku. URL: https://web422-angular.herokuapp.com/home 
+#### This repository hosts a demo blog website which is deployed on heroku. URL: https://web422-angular.herokuapp.com/home 
 #### The website uses Angular, MongoDB, Bootstrap4, and a pre-configured "blogAPI".
 
 ## Features
