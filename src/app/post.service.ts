@@ -1,13 +1,3 @@
-/*********************************************************************************
-* WEB422 – Assignment 05
-* I declare that this assignment is my own work in accordance with Seneca Academic Policy. No part of this
-* assignment has been copied manually or electronically from any other source (including web sites) or
-* distributed to other students.
-*
-* Name: __Jie Yang_______________ Student ID: __162925184_______ Date: ___July. 26, 2020________
-*
-********************************************************************************/ 
-
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
